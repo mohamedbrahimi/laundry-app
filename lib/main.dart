@@ -4,6 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:laundry_app_ytp/pages/dashbord.dart';
 import 'package:laundry_app_ytp/pages/home.dart';
 import 'package:laundry_app_ytp/pages/login.dart';
+import 'package:laundry_app_ytp/pages/single_page.dart';
 import 'package:laundry_app_ytp/utils/constants.dart';
 
 void main() {
@@ -45,6 +46,10 @@ Route<dynamic> _onGenrateRoute(RouteSettings settings) {
      case "/dashborad":
       return MaterialPageRoute(builder: (BuildContext context) {
         return Dashborad();
+      });
+     case "/single-order":
+      return MaterialPageRoute(builder: (BuildContext context) {
+        return SingleOrder();
       });
     default: 
        return MaterialPageRoute(builder: (BuildContext context) {

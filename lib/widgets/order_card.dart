@@ -3,6 +3,7 @@ import 'package:flutter_icons/flutter_icons.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:intl/intl.dart';
 import 'package:laundry_app_ytp/models/order.dart';
+import 'package:laundry_app_ytp/utils/helper.dart';
 
 class OrderCard extends StatelessWidget {
   final Order order;
@@ -11,7 +12,9 @@ class OrderCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {},
+      onTap: () {
+        nextScreen(context, "/single-order");
+      },
       child: Container(
         height: ScreenUtil().setHeight(130),
         decoration: BoxDecoration(
